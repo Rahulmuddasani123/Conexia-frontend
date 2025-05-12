@@ -1,0 +1,225 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, cupcake;
+  themes: all;
+}
+
+.input-box {
+  padding: 10px;
+  border: 2px solid #b0a2ea;
+  background: white;
+  border-radius: 9px;
+}
+.input-box:focus {
+  color: #4a4594;
+  outline: none;
+}
+.sss{
+  background-color: transparent;
+}
+.loginPageMainContainer {
+  background-image: url("src/assets/ThemeBackground.jpg");
+  background-size: cover;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+.loginPageBottomText {
+  color: white;
+  font-size: 15px;
+}
+.loginButton {
+  background-color: #502d87;
+  color: white;
+  font-weight: bold;
+  padding: 8px 20px;
+  border-radius: 4px;
+  transition:  0.2s ;
+}
+.loginButton:hover{
+  border: 1px solid #502d87;
+  background-color: white;
+  color: #502d87;
+  transition-delay: 0.3;
+
+}
+
+.font-mont {
+  font-family: "Montserrat", sans-serif;
+}
+.welcomeColor {
+  color: rgb(246, 113, 5);
+
+  border: none;
+  border-radius: 7px;
+  padding: 5px 12px;
+}
+.profileAvatar {
+  border: 3px solid #4a4594;
+  box-shadow: 1px 1px 7px #4a4594;
+  background-color: rgb(0, 0, 0);
+}
+.alreadyAUserText {
+  color: #363275;
+  font-size: 13px;
+}
+.forgotYourPassword {
+  font-size: 13px;
+}
+.eyeIcon {
+  color: #4a4594;
+}
+.success-Container {
+  background-color: #4a4594;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 12px;
+}
+.error-Container {
+  background-color: white;
+  color: red;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 12px;
+}
+.default-color {
+  color: #4a4594;
+}
+.bg-default-color {
+  background-color: #4a4594;
+}
+
+/* Connection Page  */
+
+.RemoveConnectionButton {
+  background-color: white;
+  color: rgb(248, 32, 32);
+  font-size: 11px;
+  height: 32px;
+  width: 80px;
+
+  border-radius: 4px;
+}
+
+/* Requests page */
+
+.RejectRequestButton {
+  background-color: white;
+  color: red;
+  font-size: 12px;
+  height: 32px;
+  width: 80px;
+  border-radius: 4px;
+}
+.AcceptRequestButton {
+  background-color: white;
+  color: green;
+  font-size: 12px;
+  height: 32px;
+  width: 80px;
+  border-radius: 4px;
+}
+
+/* Footer Page */
+
+.FooterTitle {
+  font-family: "Pacifico", cursive;
+  color: orangered;
+  font-size: 22px;
+}
+
+.FooterSlogan {
+  font-family: "Pacifico", cursive;
+  color: #4a4594;
+  font-size: 16px;
+}
+
+/* Feed Page */
+
+.FeedConnectButton {
+  background-color: white;
+  color: green;
+  font-size: 13px;
+  height: 32px;
+  width: 88px;
+  border-radius: 4px;
+}
+.FeedIgnoreButton {
+  background-color: white;
+  color: red;
+  font-size: 13px;
+  height: 32px;
+  width: 88px;
+  border-radius: 4px;
+}
+
+.ConnectionSentToast {
+  color: #4a4594;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  border: 1px solid #4a4594;
+}
+.UserIgnoredToast {
+  color: rgb(246, 55, 55);
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  border: 1px solid rgb(246, 55, 55);
+}
+.ConnectionRemovedToast {
+  background-color: white;
+  color: #4a4594;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 12px;
+}
+.bg-img-default {
+  background-image: url("src/assets/ThemeBackground.jpg");
+}
+.ButtonBgWhite{
+  background-color: white;
+  color: #4a4594;
+  font-size: 13px;
+  font-weight: bold;
+  height: 38px;
+  width: 88px;
+  border-radius: 4px;
+
+}
+
+.EditProfileButton{
+  background-color: white;
+  color: #4a4594;
+  font-size: 13px;
+  font-weight: bold;
+  height: 32px;
+  width: 65px;
+  border-radius: 4px;
+
+}
+
+.changePasswordSuccessButton {
+  background-color: white;
+  color: #4a4594;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.EditSuccessToast {
+  background-color: white;
+  color: #4a4594;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 12px;
+}
