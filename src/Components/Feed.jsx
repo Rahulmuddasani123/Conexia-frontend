@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import flower from '../assets/Flower.png';
+import No_feed from '../assets/No_Feed.png'
 
 import { BASE_URL } from "../utils/constants";
 import UserCard from "./UserCard";
@@ -43,16 +44,15 @@ const Feed = () => {
     <>
       {loading && <FeedShimmer />}
 
-     <img src={flower} className="absolute bottom-0 right-0" />
+      <img src={flower} className="absolute bottom-0 right-0" />
       <img src={flower} className="absolute bottom-0 left-0" />
-
 
       {feed && feed.length > 0 && feed[0] && (
         <UserCard user={feed[0]} loginPageMainContainer />
       )}
       {feed && feed.length === 0 && (
         <div className="flex justify-center  items-center my-40">
-          <img src="src/assets/No_Feed.png" width={330} />
+          <img src={No_feed} width={330} />
         </div>
       )}
     </>
