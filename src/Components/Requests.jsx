@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import No_Requests from '../assets/No_Requests.png'
 
 import { BASE_URL } from "../utils/constants";
 import { addRequest, removeRequest } from "../utils/requestsSlice";
@@ -134,7 +135,7 @@ const Requests = () => {
           )
         ) : (
           <div className="flex justify-center  items-center my-30">
-            <img src="src/assets/No_Requests.png" width={230} />
+            <img src={No_Requests} width={230} />
           </div>
         )}
       </motion.div>
