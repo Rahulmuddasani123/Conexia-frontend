@@ -21,7 +21,7 @@
   background-color: transparent;
 }
 .loginPageMainContainer {
-  background-image: url("src/assets/ThemeBackground.jpg");
+ background-image: url("./assets/ThemeBackground.jpg");
   background-size: cover;
   height: 100vh;
   font-family: "Montserrat", sans-serif;
@@ -183,7 +183,7 @@
   font-size: 12px;
 }
 .bg-img-default {
-  background-image: url("src/assets/ThemeBackground.jpg");
+  background-image: url("./assets/ThemeBackground.jpg");
 }
 .ButtonBgWhite{
   background-color: white;
