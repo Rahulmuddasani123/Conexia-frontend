@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import No_Connections from "../assets/No_Connections.png";
 
 import { BASE_URL } from "../utils/constants";
 import { addConnection, removeConnection } from "../utils/connectionsSlice";
@@ -135,7 +136,7 @@ const Connections = () => {
             <>
               <div className="flex flex-row justify-center  items-center mt-30">
                 <div>
-                  <img src="src/assets/No_Connections.png" width={250} />
+                  <img src={No_Connections} width={250} />
                 </div>
               </div>
               <div className="flex justify-center">
