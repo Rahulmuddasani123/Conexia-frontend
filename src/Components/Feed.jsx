@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import flower from '../assets/Flower.png';
 
 import { BASE_URL } from "../utils/constants";
 import UserCard from "./UserCard";
@@ -42,8 +43,9 @@ const Feed = () => {
     <>
       {loading && <FeedShimmer />}
 
-      <img src="src/assets/Flower.png" className="absolute bottom-0 right-0" />
-      <img src="src/assets/Flower.png" className="absolute bottom-0 left-0" />
+     <img src={flower} className="absolute bottom-0 right-0" />
+      <img src={flower} className="absolute bottom-0 left-0" />
+
 
       {feed && feed.length > 0 && feed[0] && (
         <UserCard user={feed[0]} loginPageMainContainer />
