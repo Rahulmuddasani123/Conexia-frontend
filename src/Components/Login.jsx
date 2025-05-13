@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
+import flower from '../assets/Flower.png'
 
 import { addUser } from "../utils/userSlice";
 import { BASE_URL } from "../utils/constants";
@@ -131,7 +132,7 @@ function Login() {
           )}
         </div>
         <img
-          src="src/assets/Conexia_logo.png"
+          src={flower}
           className="absolute bottom-20 right-20"
           width={220}
         />
