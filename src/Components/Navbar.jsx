@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import Conexia_logo from "../assets/Conexia_logo.png";
 
 import { addUser } from "../utils/userSlice";
 import { BASE_URL } from "../utils/constants";
@@ -53,7 +54,7 @@ const Navbar = () => {
     >
       <div className="flex-1">
         <Link to="/" className="text-xl">
-          <img src="src/assets/Conexia_logo.png" width={60} />
+          <img src={Conexia_logo} width={60} />
         </Link>
       </div>
       {user && (
