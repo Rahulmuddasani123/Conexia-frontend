@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
-
+import Conexia_logo from "../assets/Conexia_logo.png";
 import { BASE_URL } from "../utils/constants";
 
 import { motion } from "framer-motion";
@@ -156,7 +156,7 @@ const Signup = () => {
           )}
         </div>
         <img
-          src="src/assets/Conexia_logo.png"
+          src={Conexia_logo}
           className="absolute bottom-20 right-20"
           width={220}
         />
